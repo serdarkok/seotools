@@ -133,7 +133,7 @@ class TwitterCards implements TwitterCardsContract
      */
     public function setDescription($description)
     {
-        return $this->addValue('description', htmlentities($description));
+        return $this->addValue('description', html_entity_decode($description));
     }
 
     /**
